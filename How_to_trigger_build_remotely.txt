@@ -1,0 +1,16 @@
+----TASK_1----
+Job running via commit:
+
+    1) Add webhook to this GIT repo.
+    2) When adding webhook change "https//localhost:8080" to HTTP URL using "ngrok.com"
+    3) On Jenkins side create a job with GitHub link on this repository
+       and "Build Triggers" -> "GitHub hook trigger for GITScm polling"
+    4) Also on Jenkins side add build steps in separate commands: "npm i" and "npm run wdio"
+
+    For more information: https://www.youtube.com/watch?v=YkabAT213h0&ab_channel=SaravananSeenivasan
+
+Job running by time:
+
+    1) On Jenkins side create a job with GitHub link on this repository
+       and "Build Triggers" -> "Build periodically" -> "H/2 * * * *"
+    2) Also on Jenkins side add build steps in separate commands: "npm i" and "npm run wdio"
